@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="/public/style.css">
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>ArkaStudio</title>
+</head>
+<body class="font-poppins bg-light dark:bg-slate-950">
+
+    <!-- header - start -->
+    <header class="bg-white dark:bg-slate-950 w-full border-b-2 border-slate-500 fixed top-0 right-0 left-0 z-50">
+        <nav class="container px-4 flex py-4 justify-between items-center">
+            <!-- logo -->
+            <span class="text-base text-dark dark:text-light font-bold sm:text-lg md:text-xl"><a href="#home"><span class="text-primary">Arkana</span>Studio.</a></span>
+            <!-- nav-link -->
+            <ul class="hidden lg:flex lg:space-x-8">
+                <li><a href="#home" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">home</a></li>
+                <li><a href="#about" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">about</a></li>
+                <li><a href="#skill" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">skills</a></li>
+                <li><a href="#service" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">service</a></li>
+                <li><a href="#project" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">project</a></li>
+                <li><a href="#contact" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">contact</a></li>
+            </ul>
+            <!-- icons dark mode -->
+            <div class="hidden lg:flex items-center">
+                <span class="mr-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="sunny-outline"></ion-icon></span>
+                <input type="checkbox" class="hidden" id="dark-toggle"/>
+                <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                    </div>
+                </label>
+                <span class="ml-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="moon-outline"></ion-icon></span>
+            </div>
+            <!-- hamburger menu -->
+            <div class="lg:hidden">
+                <button id="mobile-menu" class="text-dark dark:text-light">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- link menu bar reponsive -->
+        <ul id="mobile-menu-dropdown" class="lg:hidden hidden text-center space-y-6 mx-4 my-4">
+                <li><a href="#home" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">home</a></li>
+                <li><a href="#about" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">about</a></li>
+                <li><a href="#skill" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">skills</a></li>
+                <li><a href="#service" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">service</a></li>
+                <li><a href="#project" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">project</a></li>
+                <li><a href="#contact" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">contact</a></li>
+                <div class="flex lg:hidden justify-center items-center">
+                    <span class="mr-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="sunny-outline"></ion-icon></span>
+                    <input type="checkbox" class="hidden" id="dark-toggle"/>
+                    <label for="dark-toggle">
+                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                    </label>
+                    <span class="ml-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="moon-outline"></ion-icon></span>
+                </div>
+        </ul>
+    </header>
+    <!-- header - finish -->
+
+    <!-- home - start -->
+    <section id="home" class="pt-14 w-full min-h-screen relative">
+        <!-- background image -->
+        <img class="w-full h-full absolute bg-cover" src="/public/Image/Profil Picture/Background.png" alt="">
+            <div class="w-full h-full absolute bg-slate-800 mix-blend-multiply"></div>
+        <!-- container Home -->
+        <div class="container px-4">
+            <!-- tagline -->
+            <div class="w-full px-4 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10 text-center">
+                <h2 class="text-lg text-light font-medium tracking-wider sm:text-2xl lg:text-2xl">Hello , My Name</h2>
+                <h1 class="text-[33px] text-light font-bold sm:text-5xl lg:text-6xl xl:text-7xl">Arkana Hamizan</h1>
+                <h3 class="text-[15px] text-light font-medium sm:text-lg lg:text-2xl xl:text-[26px] mb-1">Designer | Web Developer | Illustrator</h3>
+                <p class="text-xs text-light-paragraph font-light sm:text-base md:text-lg lg:text-lg tracking-wide mb-4">This is my first portfolio website <br> which I created to show some of the designs I made for commissions.</p>
+                <a href="#contact" class="btn text-xs sm:text-base md:text-base lg:text-lg ">contact me</a>
+            </div>
+        </div>
+    </section>
+    <!-- home - finish -->
+
+    <!-- about - start -->
+    <section id="about" class="pt-20">
+        <div class="container px-4">
+            <div class="w-full flex flex-wrap-reverse sm:flex-wrap justify-center items-center">
+                <!-- image -->
+                <div class="sm:w-[40%] lg:w-[30%] xl:w-[20%] text-center mb-2" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <img class="border-2 border-primary rounded-xl" src="/public/Image/profil picture/Profil Pict.png" alt="">
+                </div>
+                <!-- tittle -->
+                <div class="w-full mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="sub-tittle">-let me introduce-</h3>
+                    <h2 class="tittle">about<span class="text-primary">me</span></h2>
+                </div>
+            </div>
+            <!-- flex 2 -->
+            <div class="w-full flex flex-wrap text-start lg:text-justify justify-center mt-2 gap-4 lg:gap-6">
+                <div class="w-full sm:text-center sm:w-[60%] lg:w-[40%] xl:w-[30%]" data-aos="fade-up" data-aos-duration="1200">
+                    <h2 class="text-xl text-dark dark:text-secondary lg:text-center font-bold mb-1">introduction</h2>
+                    <p class="text-base text-dark-paragraph dark:text-slate-300 font-medium">hello i'm arkana, i'm a boy who enjoys drawing , designing and created a website.
+                        i can use a mobile app like ibis paintX, infinite design and pixellab to draw a animation and design.</p>
+                </div>
+
+                <div class="w-full sm:text-center sm:w-[60%] lg:w-[40%] xl:w-[30%]" data-aos="fade-up" data-aos-duration="1200">
+                    <h2 class="text-xl text-dark dark:text-secondary lg:text-center font-bold mb-1">skills and ability</h2>
+                    <p class="text-base text-dark-paragraph dark:text-slate-300 font-medium">i could also use adobe illustrator and photoshop. in addition i am also learning how to make web with HTML,CSS and Javasript.
+                        i also have a year's design experience in animation or logo for traders and companies. to see my work, please visit at the portfolio below.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about - finish -->
+
+    <!-- skill - start -->
+    <section id="skill" class="pt-12">
+        <div class="bg-slate-200 dark:bg-dark py-6">
+            <div class="container px-4">
+                <div class="w-full mb-6" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="sub-tittle">-software and technology-</h3>
+                    <h2 class="tittle">ski<span class="text-primary">lls</span></h2>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="flex flex-wrap w-full justify-center gap-4" data-aos="zoom-in" data-aos-duration="1200">
+                        <img src="/public/Image/skill image/skill1.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill2.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill3.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill4.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill5.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill6.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill7.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill8.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill9.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                        <img src="/public/Image/skill image/skill10.png" class="w-[70px] hover:duration-300 hover:scale-110" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skill - finish -->
+
+    <!-- service - start -->
+    <section id="service" class="pt-20">
+        <div class="container">
+            <div class="w-full mb-8" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="sub-tittle">-our special features-</h3>
+                <h2 class="tittle">servi<span class="text-primary">ces</span></h2>
+            </div>
+            <!-- flex -->
+            <div>
+                <div class="flex flex-wrap justify-center gap-4 px-4">
+                    <!-- card-1 -->
+                    <div class="card w-full sm:w-[50%] sm:h-[250px] lg:w-[25%] xl:w-[20%] lg:h-[270px] xl:h-[250px] hover:border-none  hover:bg-secondary hover:duration-200 hover:ease-in-out group" data-aos="flip-down" data-aos-duration="1200">
+                        <div class="flex justify-center pb-6 ">
+                            <i class="fa-solid fa-pen-nib text-5xl sm:text-6xl text-dark group-hover:text-light dark:text-light"></i>
+                        </div>
+                        <h2 class="text-xl text-dark dark:text-light font-bold sm:text-2xl lg:text-lg text-center group-hover:text-light mb-1">Designer</h2>
+                        <p class="text-xs text-dark-paragraph font-normal sm:text-base lg:text-base xl:text-base text-center group-hover:text-light px-4 ">i can make you a design mascot , logo , branding logo , logo company and etc.</p>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card w-full sm:w-[50%] sm:h-[250px] lg:w-[25%] xl:w-[20%] lg:h-[270px] xl:h-[250px] hover:border-none  hover:bg-secondary hover:duration-200 hover:ease-in-out group" data-aos="flip-down" data-aos-duration="1200">
+                        <div class="flex justify-center pb-6 ">
+                            <i class="fa-solid fa-code text-5xl sm:text-6xl text-dark dark:text-light group-hover:text-light"></i>
+                        </div>
+                        <h2 class="text-xl text-dark dark:text-light font-bold sm:text-2xl lg:text-lg text-center group-hover:text-light mb-1">Web Developer</h2>
+                        <p class="text-xs text-dark-paragraph font-normal sm:text-base lg:text-base xl:text-base text-center group-hover:text-light px-4 ">i can make you a responsive , interesting and modern website for your company.</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card w-full sm:w-[50%] sm:h-[250px] lg:w-[25%] xl:w-[20%] lg:h-[270px] xl:h-[250px] hover:border-none  hover:bg-secondary hover:duration-200 hover:ease-in-out group" data-aos="flip-down" data-aos-duration="1200">
+                        <div class="flex justify-center pb-6 ">
+                            <i class="fa-solid fa-palette text-5xl sm:text-6xl text-dark dark:text-light group-hover:text-light"></i>
+                        </div>
+                        <h2 class="text-xl text-dark dark:text-light font-bold sm:text-2xl lg:text-lg text-center group-hover:text-light mb-1">Illustrator</h2>
+                        <p class="text-xs text-dark-paragraph font-normal sm:text-base lg:text-base xl:text-base text-center group-hover:text-light px-4 ">i can make you a interesting illustration , animation , esport logo and many more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service - finish -->
+
+    <!-- project - start -->
+    <section id="project" class="pt-[68px]">
+        <div class=" bg-slate-200 dark:bg-dark py-8">
+            <div class="container px-4">
+                <div class="w-full mb-8" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="sub-tittle">-our latest work-</h3>
+                    <h2 class="tittle">proj<span class="text-primary">ect</span></h2>
+                </div>
+
+                <!-- box -->
+                <div class="flex flex-wrap gap-10 w-full">
+                    <!-- card -->
+                    <div class="flex flex-wrap gap-4 justify-center w-full" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="sm:w-[50%] lg:w-[20%]">
+                            <img class="rounded-lg" src="/public/Image/portfolio esport logo/esport1.jpg" alt="">
+                        </div>
+                        <div class="sm:w-[50%] lg:w-[30%]">
+                            <h2 class="text-xl text-dark font-bold dark:text-secondary mb-2">E-sports Logo design</h2>
+                            <p class="text-base text-dark-paragraph dark:text-light-paragraph mb-4">This is a picture or work that I made for the commission project, I made this esports logo with a fierce theme to make it look masculine and strong</p>
+                            <a href="esport_logo.html" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="flex flex-wrap flex-row-reverse gap-4 justify-center w-full" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="sm:w-[50%] lg:w-[20%]">
+                            <img class="rounded-lg" src="/public/Image/portfolio mascot logo/mascot1.jpeg" alt="">
+                        </div>
+                        <div class="sm:w-[50%] lg:w-[30%]">
+                            <h2 class="text-xl text-dark font-bold dark:text-secondary mb-2">Mascot Logo design</h2>
+                            <p class="text-base text-dark-paragraph dark:text-light-paragraph mb-4">This is a picture or work that I made for the commission project, I created this mascot logo for a company, trader, esports team and others.</p>
+                            <a href="mascot_logo.html" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="flex flex-wrap gap-4 justify-center w-full" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="sm:w-[50%] lg:w-[20%]">
+                            <img class="rounded-lg" src="/public/Image/portfolio flat illustration/flat5.jpg" alt="">
+                        </div>
+                        <div class="sm:w-[50%] lg:w-[30%]">
+                            <h2 class="text-xl text-dark font-bold dark:text-secondary mb-2">Flat Design Illustration</h2>
+                            <p class="text-base text-dark-paragraph dark:text-light-paragraph mb-4">This is a picture or work that I made for the commission project, I created this illustration for a instagram profil and web microstock.</p>
+                            <a href="flat_design.html" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="flex flex-wrap flex-row-reverse gap-4 justify-center w-full" data-aos="zoom-in-up" data-aos-duration="1200">
+                        <div class="sm:w-[50%] lg:w-[20%]">
+                            <img class="rounded-lg" src="/public/Image/portfolio pixel art/Pixel art-07.jpg" alt="">
+                        </div>
+                        <div class="sm:w-[50%] lg:w-[30%]">
+                            <h2 class="text-xl text-dark font-bold dark:text-secondary mb-2">Pixel Art Illustration</h2>
+                            <p class="text-base text-dark-paragraph dark:text-light-paragraph mb-4">This is a picture or work that I made for the commission project, I created this pixel art for a NFT , instagram and video games.</p>
+                            <a href="pixel_design.html" class="btn">see more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project - finish -->
+
+    <!-- contact - start -->
+    <section id="contact" class="pt-20">
+        <div class="container mx-auto">
+            <div class="w-full mb-6" data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="sub-tittle">-get in touch-</h3>
+                <h2 class="tittle">cont<span class="text-primary">act</span></h2>
+            </div>
+
+            <div class="flex flex-wrap justify-center p-4 w-full">
+                <div class="w-full sm:w-[70%] lg:w-[40%]" data-aos="flip-left" data-aos-duration="1200">
+                    <img src="/public/Image/profil picture/illustrasi contact-01.png" alt="">
+                </div>
+                    <form class="w-full  sm:w-[70%] lg:w-[30%] mt-10" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="mb-4">
+                            <label for="nama" class="block text-xs sm:text-base text-dark dark:text-light font-normal lg:text-base mb-[6px]">Username :</label>
+                            <input type="text" id="nama" name="nama" class="w-full border border-gray-300 rounded focus:outline-none focus:outline-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-xs sm:text-base text-dark dark:text-light font-normal lg:text-base mb-[6px]">Email :</label>
+                            <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded focus:outline-none focus:outline-primary">
+                        </div>
+                        <div class="mb-4">
+                            <label for="pesan" class="block text-xs sm:text-base text-dark dark:text-light font-normal lg:text-base mb-[6px]">Message :</label>
+                            <textarea id="pesan" name="pesan" class="w-full border border-gray-300 rounded focus:outline-none focus:outline-primary"></textarea>
+                        </div>
+                        <div class="text-center lg:text-start">
+                            <button type="submit" class="btn text-xs sm:text-base lg:text-base w-full lg:w-[30%]">Send</button>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact - finish -->
+
+    <!-- <svg class="dark:hidden -mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2e8f0" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,80C384,53,480,43,576,80C672,117,768,203,864,208C960,213,1056,139,1152,112C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg class="hidden dark:block -mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0c4a6e" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,80C384,53,480,43,576,80C672,117,768,203,864,208C960,213,1056,139,1152,112C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+    
+    <!-- footer - start -->
+    <footer class="bg-slate-200 dark:bg-dark mt-4 pt-4 pb-1">
+        <div class="container px-4">
+            <div class="w-full flex justify-center gap-4 md:gap-8 flex-wrap">
+                <div class="w-full sm:w-[30%] lg:w-[30%] mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="mb-2">
+                        <a href="#" class="text-xl text-primary dark:text-secondary font-bold capitalize">arkana studio</a>
+                    </div>
+                    <div class="flex gap-2 items-start mb-2 ">
+                        <i class="fa-solid fa-location-dot text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">Address : jalan pisangan lama 3 <br> Rt.02/Rw.12, pisangan timur <br> jakarta timur.</p>          
+                    </div>
+                    <div class="flex gap-2 items-start mb-2 ">
+                        <i class="fa-solid fa-phone text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">Phone : 0812-1949-2877</p>          
+                    </div>
+                    <div class="flex gap-2 items-start">
+                        <i class="fa-solid fa-envelope text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">E-mail : arkanastudio@gmail.com</p>          
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[30%] lg:w-[20%] sm:text-center lg:text-start mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <h2 class="text-base text-dark dark:text-secondary font-semibold mb-2">Pages</h2>
+                    <div class="flex flex-col gap-1">
+                        <a href="#home" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">home</a>
+                        <a href="#about" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">about</a>
+                        <a href="#skill" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">skills</a>
+                        <a href="#service" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">service</a>
+                        <a href="#project" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">project</a>
+                        <a href="#contact" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">contact</a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[30%] lg:w-[20%]" data-aos="zoom-in" data-aos-duration="1200">
+                    <h2 class="text-base text-dark dark:text-secondary font-semibold mb-2">Social Media</h2>
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.instagram.com/dwioxide/" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Dwioxidee</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-x-twitter text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://twitter.com/Dwioxidee" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">@Dwioxidee</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.facebook.com/Avengedputra.LostVersion?locale=id_ID" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Dwika Sugia Putra</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-tiktok text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.tiktok.com/@arkana.code" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Arkana.Code</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-github text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://github.com/ArkanaStudio" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">ArkanaStudio</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <p class="text-center text-xs text-dark-paragraph">copyright by arkanastudio-2023</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - finish -->
+
+
+    <!-- ionicons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- AnimateOnScroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- My Javascript -->
+    <script>
+    // hamburger Menu
+            document.getElementById('mobile-menu').addEventListener('click', function() {
+    var mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+    mobileMenuDropdown.classList.toggle('hidden');
+    });
+
+    // darkMode
+    const darkToggle = document.querySelector('#dark-toggle');
+    const html = document.querySelector('html');
+
+    darkToggle.addEventListener('click', function () {
+        if (darkToggle.checked) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+    })
+    </script>
+</body>
+</html>

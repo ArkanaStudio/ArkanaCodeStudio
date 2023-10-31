@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+@apply px-3 py-2 bg-gradient-to-r from-primary to-secondary rounded-md text-light hover:opacity-80 hover:duration-200 hover:ease-in-out hover:shadow-sm focus:ring focus:ring-sky-300;
+}
+
+.sub-tittle {
+@apply text-base text-dark-paragraph dark:text-light-paragraph font-normal text-center sm:text-lg lg:text-lg tracking-wider ;
+}
+
+.tittle {
+@apply text-xl text-dark dark:text-light font-bold text-center sm:text-2xl lg:text-2xl;
+}
+
+.card {
+@apply px-1 py-6 border-2 border-primary rounded-lg overflow-hidden shadow-sm shadow-primary;
+}
+
+.btn-gradient {
+@apply  px-2 py-1 rounded-sm cursor-pointer bg-gradient-to-br bg-primary to-secondary hover:opacity-80;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+@apply translate-x-3
+}
+
+.gradient-dark {
+@apply bg-gradient-to-br from-slate-900 to-slate-700;
+}
