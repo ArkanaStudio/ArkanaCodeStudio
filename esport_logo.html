@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-poppins">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>E-sports Logo Project</title>
+
+</head>
+<body class="font-poppins bg-light dark:bg-slate-950">
+
+ <!-- header - start -->
+ <header class="bg-white dark:bg-slate-950 w-full border-b-2 border-slate-500 fixed top-0 right-0 left-0 z-50">
+    <nav class="container px-4 flex py-4 justify-between items-center">
+        <!-- logo -->
+        <span class="text-base text-dark dark:text-light font-bold sm:text-lg md:text-xl"><a href="/index.html"><span class="text-primary">Arkana</span>Studio.</a></span>
+        <!-- nav-link -->
+        <ul class="hidden lg:flex lg:space-x-8">
+            <li><a href="./index.html" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">home</a></li>
+            <li><a href="./index.html#about" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">about</a></li>
+            <li><a href="./index.html#skill" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">skills</a></li>
+            <li><a href="./index.html#service" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">service</a></li>
+            <li><a href="./index.html#project" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">project</a></li>
+            <li><a href="./index.html#contact" class="text-lg text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">contact</a></li>
+        </ul>
+        <!-- icons dark mode -->
+        <div class="hidden lg:flex items-center">
+            <span class="mr-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="sunny-outline"></ion-icon></span>
+            <input type="checkbox" class="hidden" id="dark-toggle"/>
+            <label for="dark-toggle">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                    <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                </div>
+            </label>
+            <span class="ml-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="moon-outline"></ion-icon></span>
+        </div>
+        <!-- hamburger menu -->
+        <div class="lg:hidden">
+            <button id="mobile-menu" class="text-dark dark:text-light">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- link menu bar reponsive -->
+    <ul id="mobile-menu-dropdown" class="lg:hidden hidden text-center space-y-6 mx-4 my-4">
+            <li><a href="./index.html" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">home</a></li>
+            <li><a href="./index.html#about" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">about</a></li>
+            <li><a href="./index.html#skill" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">skills</a></li>
+            <li><a href="./index.html#service" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">service</a></li>
+            <li><a href="./index.html#project" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">project</a></li>
+            <li><a href="./index.html#contact" class="text-base text-dark dark:text-light font-medium capitalize hover:text-primary hover:duration-200 hover:ease-in-out">contact</a></li>
+            <div class="flex lg:hidden justify-center items-center">
+                <span class="mr-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="sunny-outline"></ion-icon></span>
+                <input type="checkbox" class="hidden" id="dark-toggle"/>
+                <label for="dark-toggle">
+                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                    </div>
+                </label>
+                <span class="ml-2 mt-[5px] text-dark dark:text-light text-lg"><ion-icon name="moon-outline"></ion-icon></span>
+            </div>
+    </ul>
+</header>
+<!-- header - finish -->
+
+    <!-- Project -->
+    <section id="project" class="pt-[58px] lg:pt-[68px] mb-10">
+        <div class="container">
+            <!-- judul -->
+            <div class="bg-slate-200 dark:bg-dark py-2 relative" data-aos="zoom-in" data-aos-duration="1200">
+                <div class="sub-tittle">-My Project-</div>
+                <div class="tittle">E-sports Logo Design</div>
+            </div>
+
+            <!-- images -->
+            <div class="flex flex-wrap gap-4 w-full justify-center mt-8 px-4">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport1.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport2.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport3.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport4.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport5.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport6.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport7.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport8.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport9.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport10.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport11.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport12.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport13.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport14.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport15.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport16.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport17.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport18.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport19.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+                <img class="w-full sm:w-[40%] lg:w-[20%] border-2 dark:border-primary overflow-hidden rounded-xl shadow-md hover:scale-105 hover:transition hover:duration-300 hover:ease-in-out" src="./Image/portfolio esport logo/esport20.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1200">
+            </div>
+        </div>
+    </section>
+    <!-- project ends -->
+
+    <!-- footer - start -->
+    <footer class="bg-slate-200 dark:bg-dark mt-4 pt-4 pb-1">
+        <div class="container px-4">
+            <div class="w-full flex justify-center gap-4 md:gap-8 flex-wrap">
+                <div class="w-full sm:w-[30%] lg:w-[30%] mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="mb-2">
+                        <a href="#" class="text-xl text-primary dark:text-secondary font-bold capitalize">arkana studio</a>
+                    </div>
+                    <div class="flex gap-2 items-start mb-2 ">
+                        <i class="fa-solid fa-location-dot text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">Address : jalan pisangan lama 3 <br> Rt.02/Rw.12, pisangan timur <br> jakarta timur.</p>          
+                    </div>
+                    <div class="flex gap-2 items-start mb-2 ">
+                        <i class="fa-solid fa-phone text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">Phone : 0812-1949-2877</p>          
+                    </div>
+                    <div class="flex gap-2 items-start">
+                        <i class="fa-solid fa-envelope text-xs text-dark dark:text-light-paragraph"></i>
+                        <p class="text-xs text-dark dark:text-light-paragraph">E-mail : arkanastudio@gmail.com</p>          
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[30%] lg:w-[20%] sm:text-center lg:text-start mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <h2 class="text-base text-dark dark:text-secondary font-semibold mb-2">Pages</h2>
+                    <div class="flex flex-col gap-1">
+                        <a href="./index.html" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">home</a>
+                        <a href="./index.html#about" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">about</a>
+                        <a href="./index.html#skill" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">skills</a>
+                        <a href="./index.html#service" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">service</a>
+                        <a href="./index.html#project" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">project</a>
+                        <a href="./index.html#contact" class="text-xs text-dark-paragraph dark:text-light-paragraph font-light hover:text-primary">contact</a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-[30%] lg:w-[20%]" data-aos="zoom-in" data-aos-duration="1200">
+                    <h2 class="text-base text-dark dark:text-secondary font-semibold mb-2">Social Media</h2>
+                    <div class="flex flex-col gap-1">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.instagram.com/dwioxide/" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Dwioxidee</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-x-twitter text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://twitter.com/Dwioxidee" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">@Dwioxidee</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.facebook.com/Avengedputra.LostVersion?locale=id_ID" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Dwika Sugia Putra</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-tiktok text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://www.tiktok.com/@arkana.code" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">Arkana.Code</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-brands fa-github text-xs text-dark dark:text-light-paragraph"></i>
+                            <a href="https://github.com/ArkanaStudio" class="text-xs text-dark dark:text-light-paragraph hover:text-secondary">ArkanaStudio</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <p class="text-center text-xs text-dark-paragraph">copyright by arkanastudio-2023</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer - finish -->
+
+    <!-- ionicons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- AnimateOnScroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- javascript -->
+    <script>
+        // hamburger Menu
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            var mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+            mobileMenuDropdown.classList.toggle('hidden');
+            });
+
+         // darkMode
+    const darkToggle = document.querySelector('#dark-toggle');
+    const html = document.querySelector('html');
+
+    darkToggle.addEventListener('click', function () {
+        if (darkToggle.checked) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+    })
+    </script>
+</body>
+</html>
